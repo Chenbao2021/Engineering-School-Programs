@@ -1,0 +1,27 @@
+body{
+    background-color: pink;
+}
+
+#titre{
+    text-align:center;
+    color:white;
+    font-weight: bold;
+    font-size:36px;
+}
+#img{
+    text-align: center;
+    font-size: 36px;
+    border:100px;
+}
+#img p{
+    display:inline-block;
+    padding:0px 100px;
+
+}
+.images{
+    height:150px;
+}
+#fin{
+    text-align:right;
+    font-family: monospace;
+}
