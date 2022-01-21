@@ -1,0 +1,5 @@
+nom;YU
+Prénom;Chenbao
+Numéro étudiant:12012026
+
+J'ai commenté tous mes codes dans "commentaire mini_projet" question par question(Les raisonnements, les idées, et les outils utilisés).
