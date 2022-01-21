@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" /> <!-- Feuille de style -->
+    <script type="text/javascript" src="index.js"></script>
+    <title>Portail Solstyce</title>
+</head>
+<body>
+
+    <section id="Bandeau">
+        <div id="parametres">
+            <button  onmouseover="annonceoover()" onmouseleave="annoncemove()">Annonces</button>
+            <button onclick="displayParametres()" >Parametres</button>
+            <button id="services" onclick="displayServices()">Services</button>
+            <div id="detailleServices">
+                <br>
+                <table id=detailleTable>
+                    <tr>
+                      <td><button><img src="./images/infographie/PV-architecture.png"  alt="。。" />BDD</button></td>
+                    </tr>
+                    <tr>
+                        <td><button><img src="./images/infographie/PV-centrale-sol.png"  alt="。。" />Connecter</button></td>
+                    </tr>
+                    <tr>
+                        <td><button><img src="./images/infographie/PV-ombriere.png"  alt="。。" />Contacter</button></td>
+                      </tr>
+                    <tr>
+                        <td><button><img src="./images/infographie/PV-exploitation.png"  alt="。。" />Déconnecter</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="parametre">
+            <p>Mode</p>
+            <button onclick="journee()">Mode Lumière</button> <button onclick="soir()" >Mode Soir</button>
+        </div>
+        <div id="choisirCentrale">
+            <em><p>Choisir une centrale photovoltaïque:</p></em>
+            <form action="" method="get" class="form-example" id="NomPlant">
+                <div class="saisirCentrale"> 
+                  <input type="text" name="name" id="name" value="Syndicat Mixte du lac d'Annecy" required >
+                  <input type="submit" value="Valider">  
+                </div>
+            </form>
+            <button id="tousLesCentrales">Afficher tous les centrales </button>
+        </div>
+        <div id="logoDroite"></div>
+    </section>
+
+    <section id="affichage">
+        <div id="annonce">
+            <div id="annoncePlan">Informations 
+                <p>Bonjour, si vous avez des doutes , contactes nous !
+                Contact:xxxxx@gmail.com
+                </p>
+            </div>
+        </div>
+
+        <div id="valeurs">
+            
+            <script>
+                const titreValeurs=["puissanceInstantanée","energieJournalièreProduite","energieAnnuelleProduite","equivalenteÀLaConsommationAnuelleDe"];
+                const idValeurs=["puissance","dayEnergy","co2reduce","foyer"];
+                var text = '<div id="tableauDetaille"></div>';
+                for (i = 0; i < idValeurs.length; i++) {
+                    text +="<div id="+"valeursp>"+titreValeurs[i]+"</div>"+"<div id="+"box><button onclick=\"tableau()\" id=detaille"+">Voire en Détaille</button><div id="+"bbox><div id="+idValeurs[i]+">0.0</div></div></div>";
+                }
+                document.getElementById("valeurs").innerHTML = text;
+            </script>
+        </div>
+    </section>
+
+
+
+</body>
+</html>
