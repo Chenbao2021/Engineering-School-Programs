@@ -1,0 +1,48 @@
+p{margin: 0em;}
+
+body{
+    background-image:url("https://img.jianbihua.com/sites/default/files/styles/photo640x425/public/images/2018-06/3_144.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: center;
+    width:100%;
+}
+
+table{
+    width:1000px;
+}
+thead{
+    background-color: black;
+    color:white;
+}
+
+table td{
+    border: 1px solid black;
+    width:50px;
+    height:50px;
+    
+    font-size:70%;
+    background-color: aqua;
+
+    opacity:0.8;
+    border-radius: 3px;
+}
+
+
+.name{
+    font-weight: bold;
+
+    text-align: center;
+
+    font-size:300%;
+}
+
+.poid{
+    text-align:right;
+}
+
+#tab{
+    position:absolute;
+    left:300px;
+    top:40px;
+}

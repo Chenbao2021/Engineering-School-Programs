@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mendeleiev.css">
+    <script type="text/javascript" src="mendeleiev.js"></script>
+    <title>Le tableau périodique</title>
+</head>
+<body>
+
+    <table id ="tab" style="width:100px;height:150px;">
+        <thead>
+            <tr>
+                <th>Affichage</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr id="affichage"></tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="18">Le tableau périodique</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td  onmouseover="changeParent(this)"><p class="poid">1.000795</p><p class="name">H</p><p class="numero">1</p></td>
+                <td style="position:relative;left:100%;transform: translate(-200%,0);"><p class="poid">4.02</p><p class="name">He</p><p class="numero">2</p></td>
+                
+            </tr>
+            <tr>
+                <td  onmouseover="changeParent(this)"><p class="poid">?</p><p class="name">Li</p><p class="numero">3</p></td>
+                <td  onmouseover="changeParent(this)"><p class="poid">?</p><p class="name">Be</p><p class="numero">4</p></td>
+                <td colspan="10" style="opacity:0;"></td>
+                <td><p class="poid">?</p><p class="name">B</p><p class="numero">5</p></td>
+                <td><p class="poid">?</p><p class="name">c</p><p class="numero">6</p></td>
+                <td><p class="poid">?</p><p class="name">N</p><p class="numero">7</p></td>
+                <td><p class="poid">?</p><p class="name">O</p><p class="numero">8</p></td>
+                <td><p class="poid">?</p><p class="name">F</p><p class="numero">9</p></td>
+                <td><p class="poid">?</p><p class="name">Ne</p><p class="numero">10</p></td>    
+            </tr>
+            <tr>
+                <td><p class="poid">?</p><p class="name">Na</p><p class="numero">11</p></td>
+                <td><p class="poid">?</p><p class="name">Mg</p><p class="numero">12</p></td>
+                <td colspan="10" style="opacity:0;"></td>
+                <td><p class="poid">?</p><p class="name">Al</p><p class="numero">13</p></td>
+                <td><p class="poid">?</p><p class="name">Si</p><p class="numero">14</p></td>
+                <td><p class="poid">?</p><p class="name">P</p><p class="numero">15</p></td>
+                <td><p class="poid">?</p><p class="name">S</p><p class="numero">16</p></td>
+                <td><p class="poid">?</p><p class="name">Cl</p><p class="numero">17</p></td>
+                <td><p class="poid">?</p><p class="name">Ar</p><p class="numero">18</p></td>    
+            </tr>
+            <tr>
+                <td><p class="poid">?</p><p class="name">K</p><p class="numero">19</p></td>
+                <td><p class="poid">?</p><p class="name">Ca</p><p class="numero">20</p></td>
+                <td><p class="poid">?</p><p class="name">Sc</p><p class="numero">21</p></td>
+                <td><p class="poid">?</p><p class="name">Ti</p><p class="numero">22</p></td>
+                <td><p class="poid">?</p><p class="name">V</p><p class="numero">23</p></td>
+                <td><p class="poid">?</p><p class="name">Cr</p><p class="numero">24</p></td>
+                <td><p class="poid">?</p><p class="name">Mn</p><p class="numero">25</p></td>
+                <td><p class="poid">?</p><p class="name">Fe</p><p class="numero">26</p></td>
+                <td><p class="poid">?</p><p class="name">Co</p><p class="numero">27</p></td>
+                <td><p class="poid">?</p><p class="name">Ni</p><p class="numero">28</p></td>
+                <td><p class="poid">?</p><p class="name">Cu</p><p class="numero">29</p></td>
+                <td><p class="poid">?</p><p class="name">Zn</p><p class="numero">30</p></td>
+                <td><p class="poid">?</p><p class="name">Ga</p><p class="numero">31</p></td>
+                <td><p class="poid">?</p><p class="name">Ge</p><p class="numero">32</p></td>
+                <td><p class="poid">?</p><p class="name">As</p><p class="numero">33</p></td>
+                <td><p class="poid">?</p><p class="name">Se</p><p class="numero">34</p></td>
+                <td><p class="poid">?</p><p class="name">Br</p><p class="numero">35</p></td>
+                <td><p class="poid">?</p><p class="name">Kr</p><p class="numero">36</p></td>    
+            </tr>
+            <tr>
+                <td colspan="18" style="text-align: center;"><p>........</p></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <tr colspan="18" rowspan="2" >
+            <td colspan="3" rowspan="1" style="border:none;background-color: white; text-align: right;"><p>Lanthanides</p></td>
+            <td><p class="poid">?</p><p class="name">La</p><p class="numero">22</p></td>
+            <td><p class="poid">?</p><p class="name">Ce</p><p class="numero">23</p></td>
+            <td><p class="poid">?</p><p class="name">Pr</p><p class="numero">24</p></td>
+            <td><p class="poid">?</p><p class="name">Nd</p><p class="numero">25</p></td>
+            <td><p class="poid">?</p><p class="name">Fe</p><p class="numero">26</p></td>
+            <td><p class="poid">?</p><p class="name">Co</p><p class="numero">27</p></td>
+            <td><p class="poid">?</p><p class="name">Ni</p><p class="numero">28</p></td>
+            <td><p class="poid">?</p><p class="name">Cu</p><p class="numero">29</p></td>
+            <td><p class="poid">?</p><p class="name">Zn</p><p class="numero">30</p></td>
+            <td><p class="poid">?</p><p class="name">Ga</p><p class="numero">31</p></td>
+            <td><p class="poid">?</p><p class="name">Ge</p><p class="numero">32</p></td>
+            <td><p class="poid">?</p><p class="name">As</p><p class="numero">33</p></td>
+            <td><p class="poid">?</p><p class="name">Se</p><p class="numero">34</p></td>
+            <td><p class="poid">?</p><p class="name">Br</p><p class="numero">35</p></td>
+            <td><p class="poid">?</p><p class="name">Kr</p><p class="numero">36</p></td>    
+        </tr>
+        <tr  >
+            <td colspan="3" rowspan="1" style="border:none;background-color: white;text-align: right;"><p>Actinicles</p></td>
+            <td><p class="poid">?</p><p class="name">Ti</p><p class="numero">22</p></td>
+            <td><p class="poid">?</p><p class="name">V</p><p class="numero">23</p></td>
+            <td><p class="poid">?</p><p class="name">Cr</p><p class="numero">24</p></td>
+            <td><p class="poid">?</p><p class="name">Mn</p><p class="numero">25</p></td>
+            <td><p class="poid">?</p><p class="name">Fe</p><p class="numero">26</p></td>
+            <td><p class="poid">?</p><p class="name">Co</p><p class="numero">27</p></td>
+            <td><p class="poid">?</p><p class="name">Ni</p><p class="numero">28</p></td>
+            <td><p class="poid">?</p><p class="name">Cu</p><p class="numero">29</p></td>
+            <td><p class="poid">?</p><p class="name">Zn</p><p class="numero">30</p></td>
+            <td><p class="poid">?</p><p class="name">Ga</p><p class="numero">31</p></td>
+            <td><p class="poid">?</p><p class="name">Ge</p><p class="numero">32</p></td>
+            <td><p class="poid">?</p><p class="name">As</p><p class="numero">33</p></td>
+            <td><p class="poid">?</p><p class="name">Se</p><p class="numero">34</p></td>
+            <td><p class="poid">?</p><p class="name">Br</p><p class="numero">35</p></td>
+            <td><p class="poid">?</p><p class="name">Kr</p><p class="numero">36</p></td>    
+        </tr>
+    </table>
+</body>
+</html>
