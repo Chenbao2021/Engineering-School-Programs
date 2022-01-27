@@ -1,0 +1,27 @@
+[
+  {
+    "name": "dupont",
+    "firstName": "jean",
+    "grades": [12.5, 11, 8, 10, 9.5, 6.5]
+  },
+  {
+    "name": "martin",
+    "firstName": "thierry",
+    "grades": [11, 7, 19, 12, 13.5, 16.5]
+  },
+  {
+    "name": "marie",
+    "firstName": "anne",
+    "grades": [14.5, 19, 18, 11, 20, 16.5]
+  },
+  {
+    "name": "sabin",
+    "firstName": "paul",
+    "grades": [18.5, 14, 18, 10, 12.5, 16]
+  },
+  {
+    "name": "sable",
+    "firstName": "philippe",
+    "grades": [12.5, 11, 8, 10, 9.5, 9.5]
+  }
+]
